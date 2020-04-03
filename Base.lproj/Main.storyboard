@@ -138,7 +138,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="PS6-QJ-yRq">
             <objects>
-                <tabBarController id="Pel-q1-OoE" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" id="Pel-q1-OoE" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="8Pw-iR-Y5q"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4gb-pS-Ma6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
