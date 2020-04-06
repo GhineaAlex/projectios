@@ -17,11 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let currentUser = Auth.auth().currentUser
         
-        if currentUser != nil {
-            self.performSegue(withIdentifier: "toFeedVC", sender: nil)
-        }
     }
 
     @IBAction func signInClicked(_ sender: Any) {
@@ -34,6 +30,8 @@ class ViewController: UIViewController {
                     self.performSegue(withIdentifier: "toFeedVC", sender: nil)
                 }
             }
+        } else {
+            maketAlert(titleInput: "Error", messageInput: "Username/Password?")
         }
     }
     
